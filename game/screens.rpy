@@ -778,7 +778,7 @@ screen preferences():
             hbox:
                 box_wrap True
 
-                if renpy.variant("pc") or renpy.variant("web"):
+                if not renpy.android:
 
                     vbox:
                         style_prefix "radio"
