@@ -1,0 +1,31 @@
+renpy.geometry renpy.solid
+MakeVisualNovels.VHS renpy.dissolve renpy.dissolve
+renpy.alpha renpy.solid
+renpy.ftl
+renpy.alpha renpy.alpha renpy.texture textshader.zoom renpy.texture textshader.zoom
+renpy.alpha renpy.alpha renpy.texture
+sgwni.glitch_memories sgwni.glitch_memories
+renpy.geometry renpy.texture
+MakeVisualNovels.VHS renpy.alpha renpy.geometry renpy.texture
+renpy.alpha renpy.texture
+renpy.dissolve renpy.dissolve
+MakeVisualNovels.VHS renpy.texture
+renpy.geometry renpy.matrixcolor renpy.texture
+renpy.geometry renpy.texture textshader.zoom
+renpy.geometry sgwni.linear_blur
+renpy.imagedissolve renpy.imagedissolve
+renpy.texture textshader.zoom renpy.texture textshader.zoom
+renpy.solid
+sgwni.linear_blur sgwni.linear_blur
+MakeVisualNovels.VHS renpy.dissolve renpy.geometry
+MakeVisualNovels.VHS renpy.geometry renpy.texture
+renpy.geometry sgwni.glitch_memories
+renpy.geometry renpy.imagedissolve
+renpy.texture
+renpy.alpha renpy.texture textshader.zoom renpy.texture textshader.zoom
+renpy.alpha renpy.geometry renpy.solid
+MakeVisualNovels.VHS renpy.alpha renpy.texture
+renpy.alpha renpy.geometry renpy.texture textshader.zoom
+renpy.matrixcolor renpy.texture
+renpy.alpha renpy.geometry renpy.texture
+renpy.dissolve renpy.geometry

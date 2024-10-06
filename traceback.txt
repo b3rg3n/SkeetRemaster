@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/scripts/scenario/carter7.rpy", line 474, in script
+    with edi_night_dis
+  File "game/scripts/scenario/carter7.rpy", line 474, in <module>
+    with edi_night_dis
+NameError: name 'edi_night_dis' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/scripts/scenario/carter7.rpy", line 474, in script
+    with edi_night_dis
+  File "C:\renpy-8.3.2-sdk\renpy\ast.py", line 1354, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "C:\renpy-8.3.2-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\renpy-8.3.2-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/scripts/scenario/carter7.rpy", line 474, in <module>
+    with edi_night_dis
+NameError: name 'edi_night_dis' is not defined
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.3.2.24090902
+SkeetRemaster 1.0
+Thu Oct  3 00:17:16 2024

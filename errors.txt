@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 643: keyword argument 'align' is incompatible with 'xalign'.
+    text "[track_checker_blya]" style "menu_buttons_suka" xalign 0.5 align 0.1 at sr_main_menu_anim(0.0, 0.1)
+                                                                          ^
+
+Ren'Py Version: Ren'Py 8.3.2.24090902
+Wed Oct  2 23:14:24 2024
