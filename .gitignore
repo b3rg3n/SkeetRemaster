@@ -1,0 +1,25 @@
+# Useless files
+.vscode/
+lib/
+renpy/
+game/cache/
+game/saves/
+game/mod_assets/scripts/.vscode/
+game/cache/shaders.txt
+log.txt
+traceback.txt
+errors.txt
+error.txt
+android.json
+android.keystore
+bundle.keystore
+project.json
+truestory.exe
+truestory.py
+truestory-32.exe
+*.pyc
+*.rpyc
+*.rpyb
+*.rpym
+*.rpymc
+*.save
