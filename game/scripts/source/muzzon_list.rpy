@@ -3,6 +3,8 @@ init:
     $ music_list_7dl = {}
 
 
+    $ music_list_7dl["Make Them Suffer - The Attendant"] = sr_mus + "mtf_ta.ogg"
+    $ music_list_7dl["Adam jensen - Pales"] = sr_mus + "aj_p.ogg"
     $ music_list_7dl["Hollywood Undead - Believe"] = sr_mus + "hu_b.ogg"
     $ music_list_7dl["Deadlylxrd - Skitetsky Diss"] = sr_mus + "morozkin_cover.ogg"
     $ music_list_7dl["ROCKET - Infinite Tsukuyomi"] = sr_mus + "r_it.ogg"

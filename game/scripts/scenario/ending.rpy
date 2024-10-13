@@ -145,7 +145,7 @@ label carter_ending_bad:
     stop sound fadeout 3
     window hide
     scene black with ed_night_dis
-    pause 1
+    $ MND_Chapter("Полгода спустя...")
     play music mf_e fadein 1
     scene sz3
     show piluka_fb
@@ -189,7 +189,7 @@ label carter_ending_bad:
     show bergenokno1
     with dreamyzoom
     nvlbazar "А что же Вечный? Он впал в серьёзную депрессию."
-    nvlbazar "От него отвернулись все бывшие товарщи."
+    nvlbazar "От него отвернулись все бывшие товарищи."
     nvlbazar "Женёк, который резво стал наносеком, после того как отошёл от дел."
     nvlbazar "Сексинос, который переехал в Питер и стал гуру по ремонту калозвонов разной степени ушатанности. Он нашёл своё призвание. Сделал хобби своей работой. Сейчас живёт в прибрежном районе СПБ."
     nvlbazar "Вечный думал покинуть город после массированных атак со стороны рейха."

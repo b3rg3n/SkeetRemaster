@@ -78,6 +78,10 @@ init:
         xpos z alpha 0
         ease e xpos x alpha 1
 
+    transform gayshit1(z, e, x):
+        xpos z alpha 1
+        ease e xpos x alpha 0
+
     transform zaprignul_na_stol2:
         align (0.71, 0.65) zoom 3.0
         ease 2 align (0.5, 0.4) zoom 3.0

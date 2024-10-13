@@ -425,8 +425,8 @@ label carter6_skeetovij:
     show zatemnenie with dspr
     play music snl fadein 4
     $ MND_Chapter("От лица Вечного:")
-    scene bergenbook
-    show layer master at blur_drunk_blya
+    scene bergenbook:
+        blur 9.0
     with linearblurbolee
     "Вечный сидел за компом, попутно глотая <<Джокера Виски с колой>>."
     "Настроение было... Оно было."
@@ -447,10 +447,7 @@ label carter6_skeetovij:
     "Осталось проверить, помогло это..."
     "Или же нет?"
     hide blink
-    if renpy.android or renpy.ios:
-        show layer master at VHS(0.83, 0.83, 0.77, 1.0)
-    else:
-        show layer master at WhiteNoise
+    show layer master at VHS(0.83, 0.83, 0.77, 1.0)
     show unblink
     vchn "А вот хуй."
     "Теперь взгляд вообще поплыл..."
@@ -870,7 +867,9 @@ label carter6_skeetovij:
     "Тем временем игридиенты закончились."
     "Они залпом выпили эту хуету."
     "На этот раз без басс буста."
-    show layer master at blur_drunk_blya
+    scene bergenbook:
+        blur 18.0
+    with linearblurbolee
     vchn "Прав был Вадимка..."
     vchn "Чумовая хуйня..."
     eva "Да..."

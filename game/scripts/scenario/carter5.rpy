@@ -1921,7 +1921,7 @@ label carter5_vibor_suka_nahui:
     window hide
     show zatemnenie with dissolve2
     menu:
-        "{size=50}Ответить {color=#0000ff}Женьку{/color}{/size}" if not persistent.achivka4:
+        "{size=50}Ответить {color=#0000ff}Женьку{/color}{/size}":
             $ pps = 3
             $ legendary_root = 1
             hide zatemnenie with dissolve2
@@ -1962,7 +1962,7 @@ label carter5_vibor_suka_nahui:
             "Потом Женёк скинул мне все координаты и контакты."
             "Что ж..."
             jump carter5_hueta_ebanaya
-        "{size=50}Ответить {color=#FF0000}Вадимке{/color}{/size}" if not persistent.achivka5:
+        "{size=50}Ответить {color=#FF0000}Вадимке{/color}{/size}":
             $ pps = 2
             $ skitetsky_root = 1
             hide zatemnenie with dissolve2
@@ -1993,7 +1993,7 @@ label carter5_vibor_suka_nahui:
             vchn "Я тебя услышал."
             "Что ж..."
             jump carter5_hueta_ebanaya
-        "{size=50}Не отвечать {color=#ffff00}никому{/color}{/size}" if not persistent.achivka1:
+        "{size=50}Не отвечать {color=#ffff00}никому{/color}{/size}":
             $ pps = 4
             $ loner_root = 1
             hide zatemnenie with dissolve2
@@ -3507,11 +3507,11 @@ label carter5_hueta_ebanaya:
         window hide
         show zatemnenie with dspr
         menu:
-            "{size=75}{color=#ff7300}Чекнуть{/color}{/size}" if not persistent.achivka2:
+            "{size=75}{color=#ff7300}Чекнуть{/color}{/size}":
                 $ pps = 5
                 hide zatemnenie with dspr
                 jump carter5_jokersha
-            "{size=75}{color=#FF0000}Нахуй надо...{/color}{/size}" if not persistent.achivka3:
+            "{size=75}{color=#FF0000}Нахуй надо...{/color}{/size}":
                 hide zatemnenie with dspr
                 jump carter5_skeetovij
 
