@@ -1,8 +1,13 @@
 init:
 
     $ music_list_7dl = {}
-
-
+    $ music_list_7dl["The Red Jumpsuit Apparatus - Cat And Mouse"] = sr_mus + "tr_cam.ogg"
+    $ music_list_7dl["Oh, Sleeper - The Island (instr)"] = sr_mus + "islandcut.ogg"
+    $ music_list_7dl["The Rapture - Echoes "] = sr_mus + "echoes2.ogg"
+    $ music_list_7dl["The Rapture - Echoes"] = sr_mus + "echoes1.ogg"
+    $ music_list_7dl["Mooze - Predator"] = sr_mus + "predator.ogg"
+    $ music_list_7dl["EMINEM - Till I Collapse (Instr)"] = sr_mus + "tic_e.ogg"
+    $ music_list_7dl["XARAKTER - Vip Eight"] = sr_mus + "vip8.ogg"
     $ music_list_7dl["Make Them Suffer - The Attendant"] = sr_mus + "mtf_ta.ogg"
     $ music_list_7dl["Adam jensen - Pales"] = sr_mus + "aj_p.ogg"
     $ music_list_7dl["Hollywood Undead - Believe"] = sr_mus + "hu_b.ogg"

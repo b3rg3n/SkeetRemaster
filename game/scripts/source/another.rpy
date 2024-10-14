@@ -294,6 +294,9 @@ init python:
     reg_char("andt", 'Ондатра', "#FFC0CB")
     reg_char("sxns", 'Санёчек', "#ffd700")
     reg_char("shb", 'ShelbyHell', "#00008b")
+    reg_char("sanechek", 'Санёчек', "#ff7300")
+    reg_char("gazovik", 'Газодуй', "#ffd700")
+    reg_char("mch", 'Mall Chicha', "#00008b")
 
 init:
 
@@ -317,6 +320,7 @@ init:
     define nvlvchn = Character (u'Вечный:', kind=nvl, color = "#ff0000", what_color="FFFFFF",)
     define nvlpchr = Character (u'Император:', kind=nvl, color = "#c8ffc8", what_color="FFFFFF",)
 
+    image brg_zabor_snos_btr = Movie(fps=60, size = (1920, 1080), play=sr_vid + "brg_zabor_snos_btr.webm")
     image menushka = Movie(fps=60, size = (1920, 1080), play=sr_vid + "menu/mn1.webm")
     image menushkasr2 = Movie(fps=60, size = (1920, 1080), play=sr_vid + "menu/mn2.webm")
     image menushkasr3 = Movie(fps=60, size = (1920, 1080), play=sr_vid + "menu/mn3.webm")

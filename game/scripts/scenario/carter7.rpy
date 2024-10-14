@@ -774,5 +774,566 @@ label carter7_bad_label_suka:
     jump carter_ending_bad
 
 label carter7_good_label_suka:
+    stop music fadeout 3
+    vchn "Я не могу оставить кентов."
+    vchn "Ни тех, ни других."
+    vchn "Поэтому мы трахнем Скита всей нашей мега-тимой."
+    vchn "Почему нет?"
     stop ambience fadeout 1
+    window hide
+    play music vip8 fadein 3
+    scene bar100
+    show marat1 at left
+    show sergo1 at right
+    show sanek1
+    with ed_lap
+    "Вечный пришёл на рейв к братве."
+    "С ходу он начал кидать оскорбления."
+    vchn "Братва."
+    vchn "Я понимаю, что вы хотите щас нахуяриться моего фирменного малыша, закусить его манежной шавой..."
+    vchn "Потом с выпученными глазами искать сральник, а уже в процессе дефикации, фелигранно скидывая штаны, посрать мимо..."
+    vchn "Но у меня есть идея ещё более пиздатая."
+    "Пацаны внимательно слушали."
+    vchn "Поехали в Шахты."
+    vchn "Нагнём одного кренделя."
+    mch "Чё за крендель?" with vpunch
+    "Спросил Молчича."
+    gazovik "Сильно силён шоль?" with vpunch
+    sanechek "Да похуй.{w} Я за." with vpunch
+    "Братва перегнлянулась."
+    vchn "У меня тазик есть."
+    vchn "Щас по-фасту прискочим."
+    play ambience dviglo fadein 3
+    scene gusedet
+    with linearblurbolee
+    nvl clear
+    nvlbazar "Пока пацаны ехали, был накинут план действий."
+    nvlbazar "Всё было неебаться как просто, но..."
+    nvlbazar "Требовались некоторые предметы, что помогут в реализации этой ахуеть какой гениальной идеи."
+    nvlbazar "Вечный пропинговал Димана."
+    nvlbazar "Он сказал, что всё достанет."
+    nvlbazar "Вечный ещё добавил, что: <<пусть начинают без меня>>."
+    stop music fadeout 3
+    nvlbazar "Нужно было ж как-то эффектно сигануть в замес."
+    nvlbazar "Тем временем они подъезжали к Новошахтинску..."
+    stop ambience fadeout 3
+    nvl clear
+    window hide
+    show zatemnenie
+    $ MND_Chapter("Далее от лица Димана:")
+    play music tic_e
+    scene int_clubs_male_day_baza
+    show deadlylxrdsvd at right
+    show kazahspr
+    show ovrspr1 at left
+    with ed_lap
+    th "Всё достал и оставил возле хаты Скита, как и договаривались."
+    "Диман с Вечным печатались в тг."
+    th "На меня эта защита не действует."
+    th "Но мы её отключим до того, как ты приедешь."
+    vchn "Добро."
+    vchn "Ожидай эпик пиздец."
+    vchn "Скоро буду."
+    "Диман закрыл тг и убрал свой царь-калозвон в карман."
+    "После чего он сосредоточился на плане Иеопки."
+    nn "Повторяю ещё раз:{w} Вадя заходит с востока, Овер заходит с запада."
+    nn "Там уже был вырыт микроподкоп под забором."
+    nn "Местные доберманки оказались достаточно сговорчивые, однако."
+    nn "Я и Диман будут заходить с юга."
+    nn "Попробуешь ебалом забор этот белокаменный проломить."
+    nn "По сигналу: <<анус сгнил>> я отрубаю защиту."
+    nn "Начинаем штурм."
+    nn "Сексинос с базы будет нас координировать."
+    nn "Шелбик будет осками в тг отвлекать Скита."
+    nn "Всем всё ясно?" with vpunch
+    nn "Ах, да..."
+    nn "Рыжую и Сезамку брать живыми."
+    nn "Оставим их Вечному и Шелбику."
+    nn "Они и решат, что делать с этими ебаными импостерами."
+    nn "План понятен?"
+    dmn "Более чем."
+    lxrd "Ясен хуй."
+    $ renpy.notify("OSUждаю, осуждаю.")
+    ovr "Я лоли-неко-экстремистка, ставлю кали на макбук."
+    window hide
+    pause 1
+    play sound shto_blyat
+    with vpunch
+    pause 2
+    ovr "Ну я понял, кароче."
+    ovr "Это если по-русски."
+    "Пацаны лишь угукнули и отправились на самоубийственную миссию."
+    "Но выбора у них не было."
+    "Это было дело принципа."
+    "Надо грохнуть эту лысую мразь."
+    "Чего бы это им не стоило."
+    "Верно?"
+    scene zabor_beton
+    show kazahspr
+    with ed_lap
+    "Неоня и Диман оказались около забора."
+    "Тротилл с собой был, но такой забор он не возьмёт."
+    "Забор состоит из сплава говна и ссанины, приправленный сверху любовным соком автора манежной шавы."
+    "В общем - эту хуйню не снести даже упавшим на неё метеоритом."
+    "Но Неоне было похуй."
+    nn "Все готовы?"
+    lxrd "Да."
+    ovr "Конечно."
+    nn "Тогда начинаем." with vpunch
+    stop music fadeout 3
+    "Неоня достал свой старый добрый Redmi 8, шитый на Legion OS с фиксом фм радио."
+    "Калозвон загружался достаточно долго, но..."
+    nn "Почти..."
+    "Неоня открыл приложение фм радио."
+    "Подключил наушники..."
+    nn "Осталось только..."
+    "И после этих слов Неоня нажал на кнопку поиска станций."
+    window hide
+    play sound poisk_rad
+    pause 5
+    "Редми начал ловить какие-то помехи."
+    nn "Неужели не сработало?" with vpunch
+    "Как вдруг из наушников начали доносится голоса."
+    window hide
+
+    play sound brg_zashita
+    pause 7
+
+    nn "Это...{w} Вечный?"
+
+    window hide
+    play sound iskra_privet
+    pause 8
+
+    nn "Рыжольда?"
+
+    window hide
+    play sound parfum_risk
+    pause 6
+
+    nn "Неужели это он её к Скиту подослал..."
+    nn "А я как-то и не додумался..."
+
+    window hide
+    play sound zona_a_off
+    pause 3
+    "Вся защита Скита была отключена."
+    nn "Чёт как-то не по плану всё идёт, блять..."
+    stop sound fadeout 2
+    "Неоня уже начал поочковывать,{w=0.2} как вдруг..."
+    play ambience dviglo fadein 2
+    play music echoes1 fadein 2
+    nn "Ты тоже это слышишь?"
+    dmn "Да."
+    dmn "Я тебе больше скажу."
+    dmn "Я знаю, кто это едет."
+    "Диман деловито поправил кусок пиццы во рту."
+    "Начал медленно поворачиваться, как вдруг..."
+    window hide
+    play sound adrazgon
+    pause 1.85
+    stop music
+    stop ambience
+    play music echoes2
+    scene brg_zabor_snos_btr
+    play sound zabor_crash
+    pause 1.75
+    scene zaborskit3
+    show kazahspr at left
+    show beter
+    with linearblur
+    nn "АХУЕТЬ!" with vpunch
+    "Вечный на бэтээре нахуй снёс забор."
+    "А говорили, что он пуленепробиваемый."
+    "Ха."
+    show bergennorm at gayshit(1.5, 0.5, 0.5)
+    vchn "Ну чё, братва?"
+    vchn "Нагнём лысую сучку?" with vpunch
+    nn "Ебать ты вовремя."
+    vchn "Я приехал не один."
+    window hide
+    scene sanek_sr_final
+    with linearblurbolee
+    sanechek "Кому ебало начистить?" with vpunch
+    nn "Хуя будулай."
+    nn "Реально опасный."
+    vchn "Ну а ты как думал?"
+    vchn "Я взял с собой только лучших из лучших."
+    window hide
+    scene marat_pizdec
+    with linearblurbolee
+    gazovik "Где эта ваша лысая сучка?" with vpunch
+    gazovik "У меня из-за неё скит ремастер не запускается!!!" with vpunch
+    window hide
+    scene perchik_mall_chicha
+    with linearblurbolee
+    mch "Перчик уже нагревается..."
+    mch "Ну, когда ебать будет эту кашолку?" with vpunch
+    scene zaborskit3
+    show kazahspr at left
+    show beter
+    with linearblur
+    stop music fadeout 3
+    nn "Пацаны, вы вовремя."
+    nn "Сексинус пингует, что к нам летит орава доберманок!" with vpunch
+    nn "Я беру Димана и иду в обход."
+    nn "К хате Скита."
+    nn "Вам нужно принять бой с этим блядским зоопарком."
+    "Вечный посмотрел на пацанов."
+    "Пацаны посмотрели на Вечного."
+    vchn "Сделаем всё в лучшем виде."
+    window hide
+    play music predator fadein 2
+    show zatemnenie
+    $ MND_Chapter("Далее от лица Вечного:")
+    scene skittolkan
+    with linearblurbolee
+    "Пацанам пришлось отступить до параши Скита."
+    "Доберманки окружали их со всех сторон."
+    "Но у Вечного была его фирменная СВДшка."
+    "Поэтому..."
+    window hide
+    play sound b_chiki
+    pause 3
+    show enot:
+        subpixel True default
+        parallel:
+            Null(473.0, 712.0)
+            'enot'
+        parallel:
+            ypos 2.0 xpos 0.25
+            linear 0.80 ypos 1.0 xpos 0.25
+    with Pause(0.90)
+    show enot:
+        ypos 1.0 xpos 0.25
+    "Клон Раккуна приполз давать Вечному пизды."
+    "Но не тут то было, блять!" with vpunch
+    window hide
+    play sound dostal
+    show SVD_wovystr_LW0607:
+        ypos 0.25
+        ease 0.5 ypos 0.05
+    "Вечный если успел удобнее перехватить СВД,{w=0.2} в то время как Раккун начал вертеть своим хуем как вентилятором,{w=0.2} пытаясь сдуть нашего няшного эмобоя."
+    window hide
+    play sound vystrel_LW0607
+    show SVD_svystrel_LW0607
+    hide SVD_wovystr_LW0607
+    $ renpy.pause (0.05)
+    show SVD_wovystr_LW0607:
+        ypos 0.05
+        xpos 0.0
+        ease 0.1 ypos 0.0
+        ease 0.1 ypos 0.05
+    hide SVD_svystrel_LW0607
+
+
+    show hitmarkermlg_LW0607:
+        ypos 0.25 xpos 0.16
+
+    pause 0.45
+    hide enot
+    show enot3:
+        xpos 0.1
+        ypos 0.0
+        ease 0.1 xpos 0.093
+        ease 0.1 xpos 0.107
+        ease 0.1 xpos 0.1
+
+    $ renpy.pause (0.1)
+    hide hitmarkermlg_LW0607 at center
+
+
+    hide enot3
+    hide SVD_wovystr_LW0607
+    stop ambience
+    show enot3:
+        anchor (0.5, 0.5)
+        pos (0.25, 0.5)
+        ease 1.0 rotate 150 xpos 0.2 ypos 2.0
+    show SVD_wovystr_LW0607 zorder 4
+    play sound padenie
+    pause 1
+    hide enot3
+    $ renpy.pause (1)
+
+    $ _window_show(dissolve)
+    "Всего один хедшот пулей калибра 7.62 заставил эту малолетку отправиться кормить червей своим говном."
+    vchn "И так будет с каждым,{w=0.2} блеать!" with vpunch
+    window hide
+    play sound bdog_groan_1
+    show dobermann zorder 3:
+        subpixel True default
+        parallel:
+            Null(900.0, 720.0)
+            'dobermann'
+        parallel:
+            xpos -1.0
+            linear 0.80 xpos 0.5
+    with Pause(0.90)
+    show dobermann:
+        xpos 0.5
+    "Теперь наступает доберманка."
+    "Ответственный момент."
+    "Вечный начинает хуярить со шпалера с криком:"
+    window hide
+    play sound b_zamai
+    pause 3
+
+    window hide
+    hide dobermann
+    show dobermann1
+    play sound vystrel_LW0607
+    show SVD_svystrel_LW0607
+    hide SVD_wovystr_LW0607
+    $ renpy.pause (0.05)
+    show SVD_wovystr_LW0607:
+        ypos 0.05
+        xpos 0.0
+        ease 0.1 ypos 0.0
+        ease 0.1 ypos 0.05
+    hide SVD_svystrel_LW0607
+    with vpunch
+    pause 0.5
+    play sound bdog_hurt_3
+    pause 2
+    hide dobermann1
+    show dobermann2
+    play sound vystrel_LW0607
+    show SVD_svystrel_LW0607
+    hide SVD_wovystr_LW0607
+    $ renpy.pause (0.05)
+    show SVD_wovystr_LW0607:
+        ypos 0.05
+        xpos 0.0
+        ease 0.1 ypos 0.0
+        ease 0.1 ypos 0.05
+    hide SVD_svystrel_LW0607
+
+    with vpunch
+    pause 0.5
+    play sound bdog_hurt_2
+    pause 2
+    hide dobermann2
+    show dobermann3
+    play sound vystrel_LW0607
+    show SVD_svystrel_LW0607
+    hide SVD_wovystr_LW0607
+    $ renpy.pause (0.05)
+    show SVD_wovystr_LW0607 zorder 4:
+        ypos 0.05
+        xpos 0.0
+        ease 0.1 ypos 0.0
+        ease 0.1 ypos 0.05
+    hide SVD_svystrel_LW0607
+    with vpunch
+    pause 0.5
+    play sound bdog_die_0
+    hide dobermann3
+    show dobermann3 zorder 3:
+        anchor (0.5, 0.5)
+        pos (0.5, 0.5)
+        ease 1.0 rotate 150 xpos 0.7 ypos 2.0
+    pause 2
+    "Доберманка была повержена."
+    window hide
+    scene sanek_sr_final
+    with linearblurbolee
+    play sound kup_krik
+    with vpunch
+    pause 6
+    "Санёк хуярил по нечисти из пулемёта."
+    "С диким криком он вынес почти всю ораву клонов."
+    window hide
+    scene marat_pizdec
+    with linearblurbolee
+    "Газовик пускал адские шептуны после манежной шавы, тем самым сжигая всё на своём пути."
+    "Как он их сжёг?"
+    window hide
+    play sound prosto
+    pause 1
+    scene perchik_mall_chicha
+    with linearblurbolee
+    "Молчун кастанул перчик, который выдавал пламя в 2000 градусов."
+    "Тем самым он смог подпалить шептун, который извергала жопа Газовика."
+    vchn "Братва, мы всех раскидали!"
+    vchn "Мы лучшие!" with vpunch
+    mch "Именно!" with vpunch
+    stop music fadeout 3
+    "А как там дела у нашей лысой многолетки, м?"
+    window hide
+    show zatemnenie with dspr
+    $ MND_Chapter("Тем временем Скит:")
+    play music islandcut fadein 2
+    scene domint
+    show sezam4ik at left
+    show vasilisa at right
+    with linearblurbolee
+    skt "Сука..."
+    skt "Малолетки конченные наступают..."
+    sezam "Нам нужен план отхода..."
+    skt "Он уже есть."
+    skt "Я беру рыжую и прыгаю в подвал."
+    skt "Там есть проход в канализацию Новошахтинска."
+    skt "Спасибо квадре, что не стали заделывать."
+    vas "То-то у тебя говном воняет дома..."
+    skt "А ты останешься и прикроешь отход." with vpunch
+    sezam "Ты гонишь?{w} Они же меня с говном схавают!" with vpunch
+    "На это возражение у Скита был лишь один ответ:"
+    window hide
+    play sound maloletka
+    with vpunch
+    pause 1
+    "Сезамка спорить не стал."
+    window hide
+    show zatemnenie with dspr
+    $ MND_Chapter("Тем временем Вечный:")
+    scene domint
+    show sezam4ik
+    with linearblurbolee
+    "Вечный с братвой ворвались в дом Скита."
+    "Но Скита там не было."
+    "Там был лишь один Сезамка."
+    "У Вечного на такие фокусы разговор короткий."
+    play sound dostal
+    show SVD_wovystr_LW0607:
+        ypos 0.25
+        ease 0.5 ypos 0.05
+    vchn "Где остальные ебаклаки?" with vpunch
+    "Сезамка быстро сообразил, что юлить не стоит."
+    sezam "Они убежали через подвал."
+    "Вечный ринулся туда."
+    "А сезамку повязал Чиконя."
+    window hide
+    scene hospital_doroga
+    show sanek
+    with ed_lap
+    "В подвале никого не было."
+    "Но была огромная дыра, из которой воняло продуктами отходоса после манежной шавы."
+    sanechek "Видимо, ушли."
+    vchn "Я вижу." with vpunch
+    "В этот момент Вечному пришла гска на редми 9т."
+    window hide
+    play sound iskra_vse_ploxo
+    pause 6
+    "Ответка от Вечного не заставила себя долго ждать."
+    window hide
+    play sound brg_pridu
+    pause 2
+    "Вечный понял, что выбора нету."
+    vchn "Пойдёшь со мной туда?"
+    sanechek "С тобой - хоть на край света." with vpunch
+    window hide
+    scene sralnik_skita
+    show sanek
+    with linearblur
+    "Пацаны шли по каловым рекам прямиком из варягов в греки."
+    "Воняло пиздец."
+    "Но делать было нечего."
+    "Надо было завершить начатое."
+    "Как вдруг..."
+    window hide
+    show vasilisa at right
+    show skitpio at left
+    with linearblur
+    vchn "Опача..."
+    window hide
+    play sound shkolnikivernulis
+    pause 3
+    play sound dostal
+    show SVD_wovystr_LW0607:
+        ypos 0.25
+        ease 0.5 ypos 0.05
+    vchn "Вот ты и попался, ебанько."
+    window hide
+    play sound vystrel_LW0607
+    show SVD_svystrel_LW0607
+    hide SVD_wovystr_LW0607
+    $ renpy.pause (0.05)
+    show SVD_wovystr_LW0607:
+        ypos 0.05
+        xpos 0.0
+        ease 0.1 ypos 0.0
+        ease 0.1 ypos 0.05
+    hide SVD_svystrel_LW0607
+
+
+    show hitmarkermlg_LW0607:
+        ypos 0.35 xpos 0.18
+
+    pause 0.45
+    hide skitpio
+    show skitpiohit at left
+
+    $ renpy.pause (0.1)
+    hide hitmarkermlg_LW0607 at center
+
+    hide SVD_wovystr_LW0607
+
+    show SVD_wovystr_LW0607 zorder 4
+    $ renpy.pause (1)
+
+    $ _window_show(dissolve)
+
+    "Вечный подстрелил Скита."
+    "Но тот не упал."
+    "Он сказал лишь..."
+    stop music fadeout 3
+    window hide
+    play sound maloletka
+    pause 3
+    "В это же время Вечный засасывал Василису..."
+    window hide
+    scene black with ed_night_dis
+    play music tr_cam fadein 2
+    scene tolkanmall
+    show vadimka at left
+    show kazahspr
+    show coldspr at right
+    cld "Ну что, братва?" with vpunch
+    cld "Остался последний штрих."
+    cld "Казним лысого малыша за оски в телеграмме?"
+    lxrd "Ради этого я здесь."
+    nn "Спрашиваешь ещё."
+    cld "Предлагаю эту честь дать Вечному."
+    cld "Всё таки он наш лучший кореш."
+    cld "Сделал всё для поимки Скита."
+    cld "И даже больше."
+    "Вечный пустил слезу."
+    vchn "Пасиба, пацаны..."
+    "Колд протянул Вечному огромный вантуз."
+    cld "Ты знаешь что делать."
+    vchn "Я не подведу."
+    play sound c_nice
+    scene sr_final_cg
+    with vpunch
+    "Вечный погрузил огромный вантуз на лысину Димы."
+    "Скит официально был повержен."
+    window hide
+    scene mogila
+    show vasilisa at right
+    show vadimka at left
+    with linearblurbolee
+    lxrd "Вот и всё, Димочка."
+    lxrd "Даоскался в телеграмме."
+    "Скит был похоронен возле своей параши в Новошахтинске."
+    "В последний путь его пришли проводить наши старые добрые кенты."
+    "Вадя, Вечный, Рыжольда."
+    vchn "Неужели эта летняя эпопея закончилась?"
+    "Вадимка лишь грустно кивнул."
+    vchn "Всё-таки это было ахуенно весело..."
+    "Вечный посмотрел на рыжую."
+    vchn "А ты что скажешь?" with vpunch
+    window hide
+    pause 2
+    vas "Хочу пиццы."
+    window hide
+    show zatemnenie with Dissolve(2)
+    nvl clear
+    "Вот так и заканчивается эта история."
+    nvlvchn "Чё там осталось-то блять?"
+    nvlvas "Эпилог."
+    nvllxrd "Ну так рассказывай давай, блять!"
+    "Кхм..."
+    "Ну а сейчас..."
+    nvl clear
     jump carter_ending

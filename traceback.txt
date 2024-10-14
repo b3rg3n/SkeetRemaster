@@ -1,30 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/scenario/carter6.rpy", line 453, in script
-    show layer master at WhiteNoise
-  File "game/scripts/scenario/carter6.rpy", line 453, in <module>
-    show layer master at WhiteNoise
-NameError: name 'WhiteNoise' is not defined
+  File "game/scripts/scenario/carter7.rpy", line 892, in script
+    play sound posik_rad
+  File "renpy/common/000statements.rpy", line 301, in execute_play_sound
+    renpy.sound.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "game/scripts/scenario/carter7.rpy", line 892, in <module>
+    play sound posik_rad
+NameError: name 'posik_rad' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/scenario/carter6.rpy", line 453, in script
-    show layer master at WhiteNoise
-  File "C:\renpy-8.3.2-sdk\renpy\ast.py", line 1149, in execute
-    at_list = [ renpy.python.py_eval(i) for i in self.at_list ]
-  File "C:\renpy-8.3.2-sdk\renpy\ast.py", line 1149, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in self.at_list ]
+  File "game/scripts/scenario/carter7.rpy", line 892, in script
+    play sound posik_rad
+  File "C:\renpy-8.3.2-sdk\renpy\ast.py", line 1974, in execute
+    self.call("execute")
+  File "C:\renpy-8.3.2-sdk\renpy\ast.py", line 1953, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\renpy-8.3.2-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 301, in execute_play_sound
+    renpy.sound.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
   File "C:\renpy-8.3.2-sdk\renpy\python.py", line 1209, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "C:\renpy-8.3.2-sdk\renpy\python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/scripts/scenario/carter6.rpy", line 453, in <module>
-    show layer master at WhiteNoise
-NameError: name 'WhiteNoise' is not defined
+  File "game/scripts/scenario/carter7.rpy", line 892, in <module>
+    play sound posik_rad
+NameError: name 'posik_rad' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.2.24090902
 SkeetRemaster 1.0
-Sun Oct 13 03:44:43 2024
+Mon Oct 14 23:49:32 2024
