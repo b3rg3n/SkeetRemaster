@@ -1,21 +1,109 @@
-2025-06-18 20:26:43 UTC
+2025-06-18 20:31:50 UTC
 Windows-10-10.0.26100
 Ren'Py 8.3.7.25031702
 
-Early init took 0.10s
+Early init took 0.09s
 Loading error handling took 0.06s
-Loading script took 0.32s
+Loading script took 0.52s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.01s
+Running init code took 0.10s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.04s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\BERGEN\\AppData\\Roaming/RenPy/backups\\SkeetRemaster':
+Dump and make backups took 0.04s
+Cleaning cache took 0.02s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.02s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.05s
+Save bytecode. took 0.06s
+Running _start took 0.02s
+Interface start took 0.37s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 7700 XT'
+Version: b'4.6.0 Compatibility Profile Context 25.6.1.250522'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1009) drawable=(1920, 1009)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1920x1009
+Реальный размер окна: 1920x1009
+Новая ширина диалога: 1116
+Новая ширина кнопок: 1185
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1920x1009
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1009) drawable=(1920, 1009)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(3170, 694) drawable=(3170, 694)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 3170x694
+Реальный размер окна: 3170x694
+Новая ширина диалога: 1842
+Новая ширина кнопок: 1956
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 3170x694
+Screen sizes: virtual=(1920, 1080) physical=(1642, 694) drawable=(1642, 694)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1642x694
+Реальный размер окна: 1642x694
+Новая ширина диалога: 954
+Новая ширина кнопок: 1013
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1642x694
+Screen sizes: virtual=(1920, 1080) physical=(1711, 694) drawable=(1711, 694)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1711x694
+Реальный размер окна: 1711x694
+Новая ширина диалога: 994
+Новая ширина кнопок: 1056
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1711x694
+Screen sizes: virtual=(1920, 1080) physical=(1711, 696) drawable=(1711, 696)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1711x696
+Реальный размер окна: 1711x696
+Новая ширина диалога: 994
+Новая ширина кнопок: 1056
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1711x696
+Resetting cache.
+Early init took 51.51s
+Loading error handling took 0.05s
+Loading script took 0.35s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.10s
-Loading analysis data took 0.02s
+Running init code took 0.06s
+Loading analysis data took 0.07s
 Analyze and compile ATL took 0.04s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.03s
 Index archives took 0.00s
-Dump and make backups took 0.04s
+Backing up script files to 'C:\\Users\\BERGEN\\AppData\\Roaming/RenPy/backups\\SkeetRemaster':
+Dump and make backups took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.11s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -23,9 +111,235 @@ Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.36s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 7700 XT'
+Version: b'4.6.0 Compatibility Profile Context 25.6.1.250522'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1237x696
+Реальный размер окна: 1237x696
+Новая ширина диалога: 719
+Новая ширина кнопок: 763
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1237x696
+Screen sizes: virtual=(1920, 1080) physical=(1717, 696) drawable=(1717, 696)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1717x696
+Реальный размер окна: 1717x696
+Новая ширина диалога: 998
+Новая ширина кнопок: 1059
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1717x696
+Screen sizes: virtual=(1920, 1080) physical=(1785, 696) drawable=(1785, 696)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1785x696
+Реальный размер окна: 1785x696
+Новая ширина диалога: 1037
+Новая ширина кнопок: 1101
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1785x696
+Resetting cache.
+Early init took 88.75s
+Loading error handling took 0.01s
+Loading script took 0.37s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.05s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\BERGEN\\AppData\\Roaming/RenPy/backups\\SkeetRemaster':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.40s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 7700 XT'
+Version: b'4.6.0 Compatibility Profile Context 25.6.1.250522'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1237x696
+Реальный размер окна: 1237x696
+Новая ширина диалога: 719
+Новая ширина кнопок: 763
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1237x696
+Resetting cache.
+Early init took 137.94s
+Loading error handling took 0.01s
+Loading script took 0.40s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.05s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\BERGEN\\AppData\\Roaming/RenPy/backups\\SkeetRemaster':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.12s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.40s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 7700 XT'
+Version: b'4.6.0 Compatibility Profile Context 25.6.1.250522'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1237x696
+Реальный размер окна: 1237x696
+Новая ширина диалога: 719
+Новая ширина кнопок: 763
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1237x696
+Screen sizes: virtual=(1920, 1080) physical=(1742, 696) drawable=(1742, 696)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1742x696
+Реальный размер окна: 1742x696
+Новая ширина диалога: 1012
+Новая ширина кнопок: 1075
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1742x696
+Resetting cache.
+Early init took 163.44s
+Loading error handling took 0.01s
+Loading script took 0.36s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.04s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\BERGEN\\AppData\\Roaming/RenPy/backups\\SkeetRemaster':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.11s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.36s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 7700 XT'
+Version: b'4.6.0 Compatibility Profile Context 25.6.1.250522'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1237, 696) drawable=(1237, 696)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1237x696
+Реальный размер окна: 1237x696
+Новая ширина диалога: 719
+Новая ширина кнопок: 763
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1237x696
+Screen sizes: virtual=(1920, 1080) physical=(1772, 696) drawable=(1772, 696)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1772x696
+Реальный размер окна: 1772x696
+Новая ширина диалога: 1029
+Новая ширина кнопок: 1093
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1772x696
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1009) drawable=(1920, 1009)
+=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===
+Новый viewport: 1920x1009
+Реальный размер окна: 1920x1009
+Новая ширина диалога: 1116
+Новая ширина кнопок: 1185
+========================================
+Maximum texture size: 4096x4096
+GUI обновлен через interact_callback: 1920x1009

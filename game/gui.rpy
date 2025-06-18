@@ -648,7 +648,7 @@ define gui.nvl_borders = Borders(0, 15, 0, 30)
 
 ## Максимальное число показываемых строк в режиме NVL. Когда количество строчек
 ## начинает превышать это значение, старые строчки очищаются.
-define gui.nvl_list_length = 20
+define gui.nvl_list_length = 3
 
 ## Высота доступных строчек в режиме NVL. Установите на None, чтобы строчки
 ## динамически регулировали свою высоту.
@@ -656,7 +656,7 @@ define gui.nvl_height = None
 
 ## Интервал между строчками в режиме NVL, если gui.nvl_height имеет значение
 ## None, а также между строчками и меню режима NVL.
-define gui.nvl_spacing = None
+define gui.nvl_spacing = 100
 
 ## Местоположение, ширина и выравнивание заголовка, показывающего имя говорящего
 ## персонажа.
@@ -690,73 +690,3 @@ define gui.nvl_button_xalign = 0.0
 ## https://www.renpy.org/doc/html/style_properties.html#style-property-language
 
 define gui.language = "unicode"
-
-
-################################################################################
-## Мобильные устройства
-################################################################################
-
-init python:
-
-    ## Этот параметр увеличивает размер быстрых кнопок, чтобы сделать их
-    ## доступнее для нажатия на планшетах и телефонах.
-    @gui.variant
-    def touch():
-
-        gui.quick_button_borders = Borders(60, 21, 60, 0)
-
-    ## Это изменяет размеры и интервалы различных элементов GUI, чтобы
-    ## убедиться, что они будут лучше видны на телефонах.
-    @gui.variant
-    def small():
-
-        ## Размеры шрифтов.
-        gui.text_size = 45
-        gui.name_text_size = 54
-        gui.notify_text_size = 38
-        gui.interface_text_size = 40
-        gui.button_text_size = 45
-        gui.label_text_size = 51
-
-        ## Регулирует местоположение текстового окна.
-        gui.textbox_height = 360
-        gui.name_xpos = 120
-        gui.dialogue_xpos = 135
-        gui.dialogue_width = 1650
-
-        ## Изменяет размеры и интервалы различных объектов.
-        gui.slider_size = 54
-
-        gui.choice_button_width = 1860
-        gui.choice_button_text_size = 45
-
-        gui.navigation_spacing = 30
-        gui.pref_button_spacing = 15
-
-        gui.history_height = None
-        gui.history_text_xpos = 255
-        gui.history_text_width = 1035
-        gui.history_name_xpos = 233
-        gui.history_name_width = 233
-
-        gui.quick_button_text_size = 30
-
-        ## Местоположение кнопок слотов.
-        gui.file_slot_cols = 3
-        gui.file_slot_rows = 2
-
-        ## Режим NVL.
-        gui.nvl_height = None
-
-        gui.nvl_name_width = 225
-        gui.nvl_name_xpos = 250
-
-        gui.nvl_text_width = 1600
-        gui.nvl_text_xpos = 260
-        gui.nvl_text_ypos = 11
-
-        gui.nvl_thought_width = 1860
-        gui.nvl_thought_xpos = 30
-
-        gui.nvl_button_width = 1860
-        gui.nvl_button_xpos = 30
