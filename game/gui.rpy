@@ -40,6 +40,256 @@ define config.check_conflicting_properties = True
 
 
 ################################################################################
+## Система Динамического GUI
+################################################################################
+
+init python:
+    class DynamicGUISystem:
+        """Система для автоматического пересчета размеров GUI элементов"""
+        
+        def __init__(self):
+            # Базовые значения для экрана 1920px
+            self.base_screen_width = 1920
+            self.base_screen_height = 1025
+            
+            # Сохраняем оригинальные пропорции
+            self.proportions = {
+                'dialogue_width': 1116 / 1920,      # 58%
+                'dialogue_xpos': 402 / 1920,        # 21%
+                'choice_button_width': 1185 / 1920, # 62%
+                'slot_button_width': 414 / 1920,    # 21.5%
+                'textbox_height': 278 / 1025,       # 27%
+                'name_xpos': 360 / 1920,            # 18.7%
+                'history_text_width': 1110 / 1920,  # 57.8%
+                'nvl_text_width': 885 / 1920,       # 46%
+            }
+            
+            # Инициализируем динамические значения
+            self.update_gui_values()
+        
+        def get_real_window_size(self):
+            """Получает реальный размер окна через SDL"""
+            try:
+                import ctypes
+                
+                # Получаем SDL dll и указатель на окно
+                sdl = renpy.get_sdl_dll()
+                win = renpy.get_sdl_window_pointer()
+                
+                if sdl is None or win is None:
+                    return None, None
+                
+                # Получаем размер окна
+                w = ctypes.c_int()
+                h = ctypes.c_int()
+                
+                sdl.SDL_GetWindowSize(win, ctypes.byref(w), ctypes.byref(h))
+                
+                return w.value, h.value
+            except Exception as e:
+                print(f"Ошибка получения размера окна через SDL: {e}")
+                return None, None
+        
+        def get_screen_width(self):
+            """Получает текущую ширину окна"""
+            # Пытаемся получить реальный размер окна
+            real_width, _ = self.get_real_window_size()
+            if real_width and real_width > 0:
+                return real_width
+            
+            # Fallback к стандартным методам
+            try:
+                width = renpy.get_physical_size()[0]
+                if width and width > 0:
+                    return width
+            except:
+                pass
+            
+            return getattr(config, 'screen_width', self.base_screen_width)
+        
+        def get_screen_height(self):
+            """Получает текущую высоту окна"""
+            # Пытаемся получить реальный размер окна
+            _, real_height = self.get_real_window_size()
+            if real_height and real_height > 0:
+                return real_height
+            
+            # Fallback к стандартным методам
+            try:
+                height = renpy.get_physical_size()[1]
+                if height and height > 0:
+                    return height
+            except:
+                pass
+            
+            return getattr(config, 'screen_height', self.base_screen_height)
+        
+        def calculate_dynamic_value(self, proportion_key, use_height=False):
+            """Вычисляет динамическое значение на основе пропорции"""
+            if use_height:
+                current_screen = self.get_screen_height()
+            else:
+                current_screen = self.get_screen_width()
+            
+            proportion = self.proportions.get(proportion_key, 0)
+            return int(current_screen * proportion)
+        
+        def update_gui_values(self):
+            """Обновляет все GUI значения на основе текущего размера экрана"""
+            # Обновляем ширины
+            gui.dialogue_width = self.calculate_dynamic_value('dialogue_width')
+            gui.choice_button_width = self.calculate_dynamic_value('choice_button_width')
+            gui.slot_button_width = self.calculate_dynamic_value('slot_button_width')
+            gui.history_text_width = self.calculate_dynamic_value('history_text_width')
+            gui.nvl_text_width = self.calculate_dynamic_value('nvl_text_width')
+            
+            # Обновляем позиции
+            gui.dialogue_xpos = self.calculate_dynamic_value('dialogue_xpos')
+            gui.name_xpos = self.calculate_dynamic_value('name_xpos')
+            
+            # Обновляем высоты
+            gui.textbox_height = self.calculate_dynamic_value('textbox_height', use_height=True)
+    
+    # Создаем экземпляр системы
+    dynamic_gui_system = DynamicGUISystem()
+    
+    # Переменная для отслеживания последнего размера
+    last_known_size = [0, 0]
+    
+    # Функция для принудительного обновления GUI (можно вызывать из игры)
+    def refresh_dynamic_gui():
+        """Принудительно обновляет все динамические значения GUI"""
+        dynamic_gui_system.update_gui_values()
+        renpy.restart_interaction()
+    
+    # Функция для проверки изменений размера окна
+    def check_and_update_gui():
+        """Проверяет изменение размера окна и обновляет GUI при необходимости"""
+        try:
+            current_width = dynamic_gui_system.get_screen_width()
+            current_height = dynamic_gui_system.get_screen_height()
+            
+            if (last_known_size[0] != current_width or 
+                last_known_size[1] != current_height):
+                
+                last_known_size[0] = current_width
+                last_known_size[1] = current_height
+                
+                # Обновляем GUI с новыми размерами
+                dynamic_gui_system.update_gui_values()
+                
+                # Принудительно перерисовываем экраны
+                renpy.restart_interaction()
+                
+                # Подробная отладочная информация
+                real_w, real_h = dynamic_gui_system.get_real_window_size()
+                physical_size = renpy.get_physical_size()
+                
+                print("=" * 50)
+                print(f"ОБНОВЛЕНИЕ GUI:")
+                print(f"Реальный размер окна (SDL): {real_w}x{real_h}")
+                print(f"Physical size (RenPy): {physical_size}")
+                print(f"Используемый размер: {current_width}x{current_height}")
+                print(f"Ширина диалога: {gui.dialogue_width}")
+                print(f"Ширина кнопок выбора: {gui.choice_button_width}")
+                print("=" * 50)
+                
+        except Exception as e:
+            print(f"Ошибка при проверке размера окна: {e}")
+    
+    # Подписываемся на изменения размера экрана
+    def on_screen_resize():
+        """Автоматически обновляет GUI при изменении размера экрана"""
+        check_and_update_gui()
+    
+    # Включаем изменяемый размер окна через preferences
+    # config.window_resizable не существует в Ren'Py, используем другой подход
+    
+    # Настраиваем автоматическое обновление при изменении размера
+    def auto_update_gui():
+        """Автоматически обновляет GUI при изменении размера окна"""
+        old_width = getattr(auto_update_gui, 'last_width', config.screen_width)
+        current_width = config.screen_width
+        
+        if old_width != current_width:
+            dynamic_gui_system.update_gui_values()
+            auto_update_gui.last_width = current_width
+    
+    # Добавляем callback для проверки изменений размера (отключено, так как может быть слишком частым)
+    # config.periodic_callback = auto_update_gui
+    
+    # Функция для тестирования системы
+    def test_dynamic_gui():
+        """Тестирует систему динамического GUI с разными размерами"""
+        real_w, real_h = dynamic_gui_system.get_real_window_size()
+        physical_size = renpy.get_physical_size()
+        
+        print("=== ТЕСТИРОВАНИЕ ДИНАМИЧЕСКОГО GUI ===")
+        print(f"Реальный размер окна (SDL): {real_w}x{real_h}")
+        print(f"Physical size (RenPy): {physical_size}")
+        print(f"Config размеры: {config.screen_width}x{config.screen_height}")
+        print(f"Используемые размеры: {dynamic_gui_system.get_screen_width()}x{dynamic_gui_system.get_screen_height()}")
+        print(f"Ширина диалога: {gui.dialogue_width}")
+        print(f"Ширина кнопок выбора: {gui.choice_button_width}")
+        print(f"Позиция диалога: {gui.dialogue_xpos}")
+        print("=========================================")
+
+    # Callback через adjust_view_size - это основной способ отслеживания изменений
+    last_viewport_size = [0, 0]
+    
+    def adjust_view_size_callback(width, height):
+        """Вызывается при изменении viewport - это наш главный способ отслеживания"""
+        global last_viewport_size
+        
+        try:
+            # Проверяем, действительно ли размер изменился
+            if (last_viewport_size[0] != width or last_viewport_size[1] != height):
+                last_viewport_size[0] = width
+                last_viewport_size[1] = height
+                
+                print(f"=== ИЗМЕНЕНИЕ РАЗМЕРА VIEWPORT ===")
+                print(f"Новый viewport: {width}x{height}")
+                
+                # Обновляем GUI с новыми размерами
+                dynamic_gui_system.update_gui_values()
+                
+                # Показываем информацию о изменениях
+                real_w, real_h = dynamic_gui_system.get_real_window_size()
+                print(f"Реальный размер окна: {real_w}x{real_h}")
+                print(f"Новая ширина диалога: {gui.dialogue_width}")
+                print(f"Новая ширина кнопок: {gui.choice_button_width}")
+                print("=" * 40)
+                
+        except Exception as e:
+            print(f"Ошибка в adjust_view_size_callback: {e}")
+        
+        # Обязательно возвращаем размер
+        return (width, height)
+    
+    # Устанавливаем callback
+    config.adjust_view_size = adjust_view_size_callback
+    
+    # Дополнительно используем interact_callbacks для обновления при взаимодействии
+    def interact_callback():
+        """Проверяет изменения при каждом взаимодействии"""
+        try:
+            current_w = dynamic_gui_system.get_screen_width()
+            current_h = dynamic_gui_system.get_screen_height()
+            
+            if (last_known_size[0] != current_w or last_known_size[1] != current_h):
+                last_known_size[0] = current_w
+                last_known_size[1] = current_h
+                dynamic_gui_system.update_gui_values()
+                print(f"GUI обновлен через interact_callback: {current_w}x{current_h}")
+                
+        except Exception as e:
+            print(f"Ошибка в interact_callback: {e}")
+    
+    # Добавляем в список callback'ов взаимодействия
+    config.interact_callbacks.append(interact_callback)
+
+
+################################################################################
 ## Конфигурируемые Переменные GUI
 ################################################################################
 
