@@ -2878,6 +2878,7 @@ label carter6_loner:
     window hide
     if not persistent.achivka1:
         $ persistent.achivka1 = True
+        $ persistent.shetchik_koncovok += 1
     play sound ach_sound
     show achiv1 at ed_get_achievement
     pause 7

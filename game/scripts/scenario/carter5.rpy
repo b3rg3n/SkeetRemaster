@@ -4199,6 +4199,7 @@ label carter5_hueta_ebanaya:
         show zatemnenie with dspr
         if not persistent.achivka4:
             $ persistent.achivka4 = True
+            $ persistent.shetchik_koncovok += 1
         play sound ach_sound
         show achiv4 at ed_get_achievement
         pause 7
@@ -5401,6 +5402,7 @@ label carter5_jokersha:
     show zatemnenie
     if not persistent.achivka2:
         $ persistent.achivka2 = True
+        $ persistent.shetchik_koncovok += 1
     play sound ach_sound
     show achiv2 at ed_get_achievement
     pause 7

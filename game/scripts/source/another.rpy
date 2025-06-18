@@ -482,3 +482,6 @@ init:
     default persistent.achivka4 = False
     default persistent.achivka5 = False
     default persistent.achivka6 = False
+
+    default persistent.shetchik_koncovok = 0
+    default persistent.shetchik_vsego = 6

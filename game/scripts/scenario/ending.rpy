@@ -107,6 +107,7 @@ label carter_ending:
     stop music fadeout 11
     if not persistent.achivka3:
         $ persistent.achivka3 = True
+        $ persistent.shetchik_koncovok += 1
     play sound ach_sound
     show achiv3 at ed_get_achievement
     pause 7
@@ -225,6 +226,7 @@ label carter_ending_bad:
 
     if not persistent.achivka5:
         $ persistent.achivka5 = True
+        $ persistent.shetchik_koncovok += 1
     play sound ach_sound
     show achiv5 at ed_get_achievement
     pause 7

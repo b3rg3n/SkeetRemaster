@@ -43,13 +43,9 @@ label main_menu_after_rnd:
 
     if persistent.achivka4 and persistent.achivka3 and persistent.achivka5 and persistent.achivka2 and persistent.achivka1 and not persistent.achivka6:
         $ persistent.achivka6 = True
+        $ persistent.shetchik_koncovok += 1
         play sound ach_sound
         show achiv6 at ed_get_achievement
-        $ persistent.achivka1 = False
-        $ persistent.achivka2 = False
-        $ persistent.achivka3 = False
-        $ persistent.achivka4 = False
-        $ persistent.achivka5 = False
         pause 7
 
     if persistent.muz_1_sr is True:

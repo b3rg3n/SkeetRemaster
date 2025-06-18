@@ -123,7 +123,7 @@ screen say(who, what):
         xpos 194
         ypos 834
         xmaximum 1541
-        size 50
+        size 35
         color "F8F4FF"
         line_spacing 1
     if who:
@@ -131,7 +131,7 @@ screen say(who, what):
             id "who"
             xpos 0.5
             ypos 797
-            size 55
+            size 40
             color "F8F4FF"
             line_spacing 1
 
@@ -394,10 +394,14 @@ screen main_menu():
 
     textbutton _("Выход") style "log_button" text_style "menu_buttons_suka" activate_sound start_sound_suka hover_sound button_menu xalign 0.1 yalign 0.7 action Quit(confirm=not main_menu) at sr_main_menu_anim(0.0, 0.1)
 
-    if config.developer:
-        text "Skitetsky REMASTER от [sr_version] | Dev" style "menu_buttons_suka" xalign 0.9 yalign 0.985 at sr_main_menu_anim(0.65, 0.9)
+    #if config.developer:
+    #    text "Skitetsky REMASTER от [sr_version] | Dev" style "menu_buttons_suka" xalign 0.9 yalign 0.985 at sr_main_menu_anim(0.65, 0.9)
+    #else:
+    #    text "Skitetsky REMASTER от [sr_version]" style "menu_buttons_suka" xalign 0.71 yalign 0.985 at sr_main_menu_anim(0.65, 0.71)
+    if persistent.shetchik_vsego > persistent.shetchik_koncovok:
+        text "Открыто концовок [persistent.shetchik_koncovok] из [persistent.shetchik_vsego]" style "menu_buttons_suka" xalign 0.71 yalign 0.985 at sr_main_menu_anim(0.55, 0.64)
     else:
-        text "Skitetsky REMASTER от [sr_version]" style "menu_buttons_suka" xalign 0.71 yalign 0.985 at sr_main_menu_anim(0.65, 0.71)
+        text "Ты открыл все концовки!" style "menu_buttons_suka" xalign 0.71 yalign 0.985 at sr_main_menu_anim(0.55, 0.64)
 
     #if gui.show_name:
 
