@@ -78,8 +78,8 @@ define config.has_voice = True
 ## переменная должна задавать переход или None, чтобы указать на то, что переход
 ## не должен использоваться.
 
-define config.enter_transition = cLinearBlur(0.5)
-define config.exit_transition = cLinearBlur(0.5)
+define config.enter_transition = ImageDissolve("source/wipeleft.png", 0.5, ramplen=64)
+define config.exit_transition = ImageDissolve("source/wipeleft.png", 0.5, ramplen=64)
 define config.intra_transition = ImageDissolve("source/wipeleft.png", 0.5, ramplen=64)
 define config.after_load_transition = MultipleTransition([False, ImageDissolve("source/wipeleft.png", 0.5, ramplen=64), Solid("#000"), Pause(0.25), Solid("#000"), ImageDissolve("source/wipeleft.png", 0.5, ramplen=64), True])
 define config.end_game_transition = Fade(1.5, 1, 2)
